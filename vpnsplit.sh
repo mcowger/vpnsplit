@@ -71,11 +71,14 @@ route add 168.159.0.0/16 -interface $TUNGW
 echo "...changing 208.80.57.0/24"
 route add 208.80.57.0/24 -interface $TUNGW
 route add 208.80.56.11/32 -interface $TUNGW
+route add 208.80.59.87/24 -interface $TUNGW
 #EMC Charlotte vLabs
 echo "...changeing 72.15.252.44/32"
 route add 72.15.252.44/32 -interface $TUNGW
 echo "...changing 204.14.232.0/21 for SFDC"
 route add 204.14.232.0/21 -interface $TUNGW
+
+route add 24.147.105.75/32 -interface $TUNGW
 
 # Let's get rid of any ipfw meddling
 
